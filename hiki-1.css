@@ -1,0 +1,284 @@
+body {
+    background-color: black;
+    animation: fadein ease-in .5s;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    /*float: left;*/
+    width: 50%;
+    padding: 10px;
+}
+
+.bg-column {
+    /*float: left;*/
+    width: 50%;
+    padding: 10px;
+}
+
+.square {
+    content: "";
+    display: flex;
+    clear: both;
+    position: absolute;
+    z-index: 2;
+    flex-direction: row;
+}
+
+.background {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.hiki-1-graphic {
+    margin-top: 18%;
+    padding-left: 17%;
+}
+
+.hiki-1-graphic img {
+    width: 80%;
+    transition: transform 250ms;
+    display: inline-block;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+.hiki-1-graphic img:hover {
+    display: inline-block;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.backward {
+    width: 20%;
+}
+
+.backward img{
+    width: 100%;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+    transition: transform 250ms;
+    transform-origin: bottom left 60px;
+}
+
+.backward img:hover {
+    display: inline-block;
+    transform-origin: bottom left 60px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.cyb-graphic {
+    margin-top: 18%;
+    padding-left: 17%;
+}
+
+.cyb-graphic img {
+    width: 80%;
+    transition: transform 250ms;
+    display: inline-block;
+    transform:scale(1.0);
+}
+
+.cyb-graphic img:hover {
+    -moz-transform:scale(1.0);
+    transform:scale(1.0);
+    -webkit-transform:scale(1.5);
+    -o-transform:scale(1.0);
+}
+
+.cyb-graphic img:hover {
+    display: inline-block;
+   -webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+   -o-transform: scale(1.5);
+   transform: scale(1.5);
+}
+
+.hiki-1-bg img {
+    filter: brightness(0.7);
+    width:150%;
+    height: 100vh;
+}
+
+.cyb-bg img {
+    filter: brightness(0.4);
+    width:100%;
+    height: 100vh;
+
+}
+
+@media screen and (max-width:800px){
+
+    .column {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .square {
+        display: flex;
+        clear: both;
+        position: absolute;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hiki-1-graphic {
+        margin-top:50%;
+    }
+
+    .hiki-1-graphic img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .cyb-graphic {
+        margin-bottom:50%;
+    }
+
+    .cyb-graphic img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .background {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-column {
+        width: 100%;
+        height: 50%
+    }
+
+    .hiki-1-bg{
+        margin-top:-50%;
+        height: 100%;
+    }
+
+    .hiki-1-bg img{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .cyb-bg {
+        margin-top: 0%;
+    }
+
+    .cyb-bg img{
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+
+    .backward {
+        margin-left: -10%;
+        margin-bottom: 5%;
+    }
+}
+
+/* @media screen and (max-width:480px){
+
+    .column {
+        width: 80%;
+        height: 50%;
+        padding: 10px;
+    }
+
+    .square {
+        display: flex;
+        clear: both;
+        position: absolute;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hiki-graphic {
+        margin-top: 50%
+    }
+
+    .hiki-graphic img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .cyb-graphic {
+        margin-top: 50%;
+    }
+
+    .cyb-graphic img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .background {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-column {
+        width: 100%;
+        height: 50%
+    }
+
+    .hiki-bg{
+        margin-top:-50%;
+        height: 100%
+    }
+
+    .hiki-bg img{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .cyb-bg {
+        margin-top: 0%;
+    }
+
+    .cyb-bg img{
+        width: 100%;
+        display: inline-block;
+        height: 100%
+    }
+} */
