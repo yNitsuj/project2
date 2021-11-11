@@ -209,11 +209,10 @@ body {
     }
 }
 
-/* @media screen and (max-width:480px){
+@media screen and (max-width:480px){
 
     .column {
         width: 80%;
-        height: 50%;
         padding: 10px;
     }
 
@@ -228,17 +227,17 @@ body {
         height: 100%;
     }
 
-    .hiki-graphic {
-        margin-top: 50%
+    .hiki-4-graphic {
+        margin-top:50%;
     }
 
-    .hiki-graphic img {
+    .hiki-4-graphic img {
         width: 80%;
         display: inline-block;
     }
 
     .cyb-graphic {
-        margin-top: 50%;
+        margin-bottom:50%;
     }
 
     .cyb-graphic img {
@@ -262,12 +261,12 @@ body {
         height: 50%
     }
 
-    .hiki-bg{
+    .hiki-4-bg{
         margin-top:-50%;
-        height: 100%
+        height: 100%;
     }
 
-    .hiki-bg img{
+    .hiki-4-bg img{
         width: 100%;
         display: inline-block;
     }
@@ -279,6 +278,11 @@ body {
     .cyb-bg img{
         width: 100%;
         display: inline-block;
-        height: 100%
+        height: 100%;
     }
-} */
+
+    .backward {
+        margin-left: -10%;
+        margin-bottom: 5%;
+    }
+}

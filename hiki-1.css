@@ -149,6 +149,84 @@ body {
         height: 100%;
     }
 
+    .hiki-intro-graphic {
+        margin-top:50%;
+    }
+
+    .hiki-intro-graphic img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .cyb-graphic {
+        margin-bottom:50%;
+    }
+
+    .cyb-graphic img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .background {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-column {
+        width: 100%;
+        height: 50%
+    }
+
+    .hiki-intro-bg{
+        margin-top:-50%;
+        height: 100%;
+    }
+
+    .hiki-intro-bg img{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .cyb-bg {
+        margin-top: 0%;
+    }
+
+    .cyb-bg img{
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+    }
+
+    .backward {
+        margin-left: -10%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .column {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .square {
+        display: flex;
+        clear: both;
+        position: absolute;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
     .hiki-1-graphic {
         margin-top:50%;
     }
@@ -208,77 +286,3 @@ body {
         margin-bottom: 5%;
     }
 }
-
-/* @media screen and (max-width:480px){
-
-    .column {
-        width: 80%;
-        height: 50%;
-        padding: 10px;
-    }
-
-    .square {
-        display: flex;
-        clear: both;
-        position: absolute;
-        z-index: 2;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .hiki-graphic {
-        margin-top: 50%
-    }
-
-    .hiki-graphic img {
-        width: 80%;
-        display: inline-block;
-    }
-
-    .cyb-graphic {
-        margin-top: 50%;
-    }
-
-    .cyb-graphic img {
-        width: 80%;
-        display: inline-block;
-    }
-
-    .background {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .bg-column {
-        width: 100%;
-        height: 50%
-    }
-
-    .hiki-bg{
-        margin-top:-50%;
-        height: 100%
-    }
-
-    .hiki-bg img{
-        width: 100%;
-        display: inline-block;
-    }
-
-    .cyb-bg {
-        margin-top: 0%;
-    }
-
-    .cyb-bg img{
-        width: 100%;
-        display: inline-block;
-        height: 100%
-    }
-} */
